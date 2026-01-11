@@ -39,7 +39,7 @@ class StockMonitor:
         now = datetime.datetime.now(self.timezone)
         # Check if it's weekend
         if now.weekday() >= 5: # 5=Saturday, 6=Sunday
-            return True
+            return False
 
         current_time = now.time()
         
@@ -52,7 +52,7 @@ class StockMonitor:
             if start_time <= current_time <= end_time:
                 return True
         
-        return True
+        return False
 
     def get_stock_data(self):
         stocks = self.config.get('stocks', [])
