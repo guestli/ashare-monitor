@@ -1,0 +1,5 @@
+requests
+pyyaml
+pytz
+akshare
+pandas

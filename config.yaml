@@ -1,0 +1,33 @@
+stocks:
+  - code: sh000001
+    name: 上
+  - code: sh002565
+    name: 顺
+  - code: sh002173
+    name: 创
+  - code: sh002195
+    name: 岩
+  - code: sz000547
+    name: 航
+  - code: sh601698
+    name: 通
+  - code: sh600118
+    name: 星
+  - code: sh002149
+    name: 材
+  - code: sh002131
+    name: 利
+  - code: sh600343
+    name: 动
+# Webhook URL (Supports generic JSON POST, DingTalk, Feishu, etc.)
+webhook_url: "https://www.feishu.cn/flow/api/trigger-webhook/8233107e9c6248f4781d39acb1f5ce04"
+
+# Check interval in seconds
+interval: 60
+
+# Trading hours (24h format)
+trading_hours:
+  - start: "09:15"
+    end: "11:30"
+  - start: "13:00"
+    end: "15:00"

@@ -1,0 +1,32 @@
+name: A-Share Monitor
+
+on:
+  schedule:
+    # Run at 09:10 Beijing Time (01:10 UTC) every weekday
+    - cron: '10 1 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360 # Allow running up to 6 hours (covers 9:10 - 15:10)
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run Monitor
+      env:
+        WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+        TZ: Asia/Shanghai
+      run: |
+        python main.py
