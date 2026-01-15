@@ -197,7 +197,7 @@ class StockMonitor:
             emoji = ""
             sign = "+" if item['change'] > 0 else ""
             # line = f"{emoji} {item['name']}: {item['price']:.2f} ({sign}{item['change']:.2f}, {sign}{item['pct_change']:.2f}%)"
-            line = f"{emoji} {item['name']}: {item['price']:.2f} ({sign}{item['pct_change']:.2f}%)"
+            line = f"{emoji} {item['name']}: {sign}{item['pct_change']:.2f}%"
             lines.append(line)
             
         return "\n".join(lines)
