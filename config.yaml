@@ -1,12 +1,8 @@
 stocks:
   - code: sh000001
     name: 上
-  - code: sh002565
-    name: 顺
   - code: sh002173
     name: 创
-  - code: sh002195
-    name: 岩
   - code: sz000547
     name: 航
   - code: sh601698
