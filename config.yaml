@@ -1,18 +1,12 @@
 stocks:
   - code: sh000001
     name: 上
-  - code: sh002173
-    name: 创
-  - code: sz000547
-    name: 航
   - code: sh601698
     name: 通
   - code: sh600118
     name: 星
   - code: sh002149
     name: 材
-  - code: sh002131
-    name: 利
   - code: sh600343
     name: 动
 # Webhook URL (Supports generic JSON POST, DingTalk, Feishu, etc.)
