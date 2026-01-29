@@ -3,7 +3,7 @@ name: A-Share Monitor
 on:
   schedule:
     # Run at 09:10 Beijing Time (01:10 UTC) every weekday
-    - cron: '10 1 * * 1-5'
+    - cron: '0 0 * * 1-5'
   workflow_dispatch:
 
 jobs:
