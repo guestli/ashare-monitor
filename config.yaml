@@ -9,6 +9,8 @@ stocks:
     name: 材
   - code: sh600343
     name: 动
+  - code: sh000547
+    name: 发
 # Webhook URL (Supports generic JSON POST, DingTalk, Feishu, etc.)
 webhook_url: "https://www.feishu.cn/flow/api/trigger-webhook/8233107e9c6248f4781d39acb1f5ce04"
 
